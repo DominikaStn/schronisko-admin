@@ -1,0 +1,57 @@
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+
+img{
+  max-height: 100%;
+}
+
+  input, textarea, select{
+    @apply border-2 border-gray-200 rounded-md px-2 py-1 w-full;
+    @apply shadow-sm;
+    @apply mb-2;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    @apply border-teal-300;
+  }
+  
+  h1{
+  @apply text-teal-700 mb-4 text-lg;
+  }
+
+  label{
+  @apply text-teal-700
+  }
+
+  .btn-primary{
+    @apply bg-teal-100 text-teal-950 rounded-md py-1 px-4 shadow-sm
+  }
+
+  table.basic{
+    @apply w-full shadow-lg;
+  }
+
+  table.basic thead tr td,
+  table.basic thead tr th {
+    @apply bg-gray-200 text-teal-800 uppercase px-4 py-2;
+  }
+
+  table.basic tr td{
+    @apply border border-gray-300 px-4 py-1;
+  }
+
+  table.basic a{
+    @apply bg-teal-100 text-teal-950 rounded-md py-1 px-2 inline-flex gap-1 mr-1;
+  }
+
+  .btn-red, .btn-default{
+    @apply px-4 py-1 rounded-md;
+  }
+  .btn-red{
+    @apply bg-red-200 text-red-600 px-4 py-1 rounded-md;
+  }
+  .btn-default{
+    @apply bg-gray-200 rounded-md py-1 px-4 shadow-sm;
+  }
